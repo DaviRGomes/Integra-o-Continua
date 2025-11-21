@@ -6,6 +6,8 @@ services:
       - POSTGRES_PASSWORD=root
       - POSTGRES_DB=root
       - PGDATA=/var/lib/postgresql/18/docker
+    ports:
+      - 5432:5432
     volumes:
       - ./postgres-data:/var/lib/postgresql
 
